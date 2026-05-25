@@ -8,6 +8,8 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.*;
 
+import java.math.BigDecimal;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -27,7 +29,7 @@ public class GemStoneRequest {
 
     @NotBlank
     @DecimalMin(value = "0.01",message = "value must be greater than 0.01")
-    private Double caratWeight;
+    private BigDecimal caratWeight;
 
     @NotBlank(message = "Gem origin is required")
     private GemOrigin origin;
@@ -37,7 +39,7 @@ public class GemStoneRequest {
 
     @NotBlank
     @DecimalMin(value = "0.01",message = "value must be greater than 0.01" )
-    private Double pricePreCarat;
+    private BigDecimal pricePreCarat;
 
     @NotBlank
     @Min(value =0,message = "value must be greater than 0")
