@@ -31,7 +31,7 @@ public class Certificate {
     private String issuedBy;
 
     @Column(nullable = false)
-    private LocalDate localDate;
+    private LocalDate issueDate;
 
     @Column(nullable = false)
     private LocalDate expireDate;
@@ -42,9 +42,12 @@ public class Certificate {
     @Column(nullable = false,updatable = false)
     private LocalDateTime createdAt;
 
+
+
     @PrePersist
     protected void onCreate(){
         this.createdAt = LocalDateTime.now();
     }
+
 
 }

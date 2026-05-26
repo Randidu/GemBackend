@@ -1,7 +1,6 @@
 package com.srilankagem.gembackend.gem.models;
 import jakarta.persistence.*;
 import lombok.*;
-
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.Map;
@@ -75,3 +74,4 @@ public class GemStone {
         this.updatedAt =LocalDateTime.now();
     }
 }
+

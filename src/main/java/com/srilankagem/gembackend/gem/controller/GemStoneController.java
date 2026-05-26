@@ -1,6 +1,6 @@
 package com.srilankagem.gembackend.gem.controller;
 
-import com.srilankagem.gembackend.common_exception.ResourceNotFoundException;
+import com.srilankagem.gembackend.common.exception.ResourceNotFoundException;
 import com.srilankagem.gembackend.gem.dto.GemStoneRequest;
 import com.srilankagem.gembackend.gem.dto.GemStoneResponse;
 import com.srilankagem.gembackend.gem.service.GemStoneService;

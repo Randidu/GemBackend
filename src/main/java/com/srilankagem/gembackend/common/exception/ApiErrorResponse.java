@@ -1,4 +1,4 @@
-package com.srilankagem.gembackend.common_exception;
+package com.srilankagem.gembackend.common.exception;
 
 
 import lombok.*;
